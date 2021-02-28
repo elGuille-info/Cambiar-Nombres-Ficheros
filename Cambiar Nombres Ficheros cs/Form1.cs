@@ -257,7 +257,8 @@ namespace Cambiar_Nombres_Ficheros_cs
             backgroundWorker_DoWork(txtDir, txtExtensiones.Text);
         }
 
-        private void bgwProc_RunWorkerCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
+        private void bgwProc_RunWorkerCompleted(object sender, 
+                                                System.ComponentModel.RunWorkerCompletedEventArgs e)
         {
             cuantosFinalizados += 1;
             // Cuando estén todos los procesos finalizados, hacer los cambios.
