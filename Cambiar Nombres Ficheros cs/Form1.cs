@@ -49,6 +49,10 @@ namespace Cambiar_Nombres_Ficheros_cs
 
             txtDir.Text = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
+            habilitarSimple(grbGrupo1, false, chkProces1);
+            habilitarSimple(grbGrupo2, false, chkProces2);
+            habilitarSimple(grbGrupo3, false, chkProces3);
+
             string ficConfig = System.Reflection.Assembly.GetExecutingAssembly().Location + ".cfg";
             cfg = new elGuille.Util.Config(ficConfig);
             cfg.Read();
@@ -174,6 +178,11 @@ namespace Cambiar_Nombres_Ficheros_cs
         {
             System.IO.FileInfo fi = new FileInfo(file);
             string s = file;
+            // fi.Name contiene también la extensión                     (01/Mar/21)
+            // Al hacer el cambio del principio o final,
+            // NO buscar el texto a cambiar no tener en cuenta la extensión.
+            var fiSoloNombre = System.IO.Path.GetFileNameWithoutExtension(file);
+            var ext = fi.Extension;
 
             LabelStatus.Text = $"{fi.Name}";
             Application.DoEvents();
@@ -183,13 +192,12 @@ namespace Cambiar_Nombres_Ficheros_cs
                 s = fi.Name.Replace(txtTexto1.Text, txtTexto2.Text);
                 if (s != fi.Name)
                     RenameFile(file, s);
-
             }
             else if (optAñadirPrincipio.Checked)
             {
                 if (chkNoDuplicar.Checked)
                 {
-                    if (fi.Name.StartsWith(txtTexto1.Text) == false)
+                    if (fiSoloNombre.StartsWith(txtTexto1.Text) == false)
                     {
                         s = txtTexto1.Text + fi.Name;
                         RenameFile(file, s);
@@ -205,31 +213,31 @@ namespace Cambiar_Nombres_Ficheros_cs
             {
                 if (chkNoDuplicar.Checked)
                 {
-                    if (fi.Name.EndsWith(txtTexto1.Text) == false)
+                    if (fiSoloNombre.EndsWith(txtTexto1.Text) == false)
                     {
-                        s = fi.Name + txtTexto1.Text;
+                        s = fiSoloNombre + txtTexto1.Text + ext;
                         RenameFile(file, s);
                     }
                 }
                 else
                 {
-                    s = fi.Name + txtTexto1.Text;
+                    s = fiSoloNombre + txtTexto1.Text + ext;
                     RenameFile(file, s);
                 }
             }
             else if (optQuitarPrincipio.Checked)
             {
-                if (fi.Name.StartsWith(txtTexto1.Text))
+                if (fiSoloNombre.StartsWith(txtTexto1.Text))
                 {
-                    s = fi.Name.Replace(txtTexto1.Text, "");
+                    s = fiSoloNombre.Replace(txtTexto1.Text, "") + ext;
                     RenameFile(file, s);
                 }
             }
             else if (optQuitarFinal.Checked)
             {
-                if (fi.Name.EndsWith(txtTexto1.Text))
+                if (fiSoloNombre.EndsWith(txtTexto1.Text))
                 {
-                    s = fi.Name.Replace(txtTexto1.Text, "");
+                    s = fiSoloNombre.Replace(txtTexto1.Text, "") + ext;
                     RenameFile(file, s);
                 }
             }
@@ -377,17 +385,28 @@ namespace Cambiar_Nombres_Ficheros_cs
 
         private void chkProces1_CheckedChanged(object sender, EventArgs e)
         {
-            grbGrupo1.Enabled = chkProces1.Checked;
+            // grbGrupo1.Enabled = chkProces1.Checked
+            habilitarSimple(grbGrupo1, chkProces1.Checked, chkProces1);
         }
 
         private void chkProces2_CheckedChanged(object sender, EventArgs e)
         {
-            grbGrupo2.Enabled = chkProces2.Checked;
+            habilitarSimple(grbGrupo2, chkProces2.Checked, chkProces2);
         }
 
         private void chkProces3_CheckedChanged(object sender, EventArgs e)
         {
-            grbGrupo3.Enabled = chkProces3.Checked;
+            habilitarSimple(grbGrupo3, chkProces3.Checked, chkProces3);
+        }
+
+        private void habilitarSimple(Control ctr, bool h, Control cSaltar)
+        {
+            for (var i = 0; i <= ctr.Controls.Count - 1; i++)
+            {
+                if (ctr.Controls[i] == cSaltar)
+                    continue;
+                ctr.Controls[i].Enabled = h;
+            }
         }
     }
 }

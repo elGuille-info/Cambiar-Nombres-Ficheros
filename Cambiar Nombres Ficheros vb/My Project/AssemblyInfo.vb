@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Cambiar Nombres Ficheros")>
-<Assembly: AssemblyDescription("Cambia los nombres de los ficheros  (revisión del 28-feb-2021, ant: 30/Oct/2008, 19/Abr/2006)")>
+<Assembly: AssemblyDescription("Cambia los nombres de los ficheros  (revisión del 1-mar-2021)")>
 <Assembly: AssemblyCompany("elGuille")>
 <Assembly: AssemblyProduct("Cambiar Nombres Ficheros")>
 <Assembly: AssemblyCopyright("©Guillermo Som (elGuille), 2005-2008, 2021")>
@@ -32,4 +32,4 @@ Imports System.Runtime.InteropServices
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
 <Assembly: AssemblyVersion("2.1.0.0")>
-<Assembly: AssemblyFileVersion("2.1.0.0")>
+<Assembly: AssemblyFileVersion("2.1.0.1")>

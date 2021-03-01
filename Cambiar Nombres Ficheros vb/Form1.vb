@@ -56,6 +56,10 @@ Public Class Form1
 
         txtDir.Text = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
 
+        habilitarSimple(grbGrupo1, False, chkProces1)
+        habilitarSimple(grbGrupo2, False, chkProces2)
+        habilitarSimple(grbGrupo3, False, chkProces3)
+
         Dim ficConfig As String = System.Reflection.Assembly.GetExecutingAssembly.Location & ".cfg"
         cfg = New elGuille.Util.Config(ficConfig)
         cfg.Read()
@@ -171,7 +175,12 @@ Public Class Form1
 
     Private Sub cambiarNombres(file As String)
         Dim fi As New System.IO.FileInfo(file)
-        Dim s As String = file ' fi.FullName
+        Dim s As String = file
+        ' fi.Name contiene también la extensión                     (01/Mar/21)
+        ' Al hacer el cambio del principio o final,
+        ' NO buscar el texto a cambiar no tener en cuenta la extensión.
+        Dim fiSoloNombre = System.IO.Path.GetFileNameWithoutExtension(file)
+        Dim ext = fi.Extension
 
         LabelStatus.Text = $"{fi.Name}"
         Application.DoEvents()
@@ -183,7 +192,7 @@ Public Class Form1
             End If
         ElseIf optAñadirPrincipio.Checked Then
             If chkNoDuplicar.Checked Then
-                If fi.Name.StartsWith(txtTexto1.Text) = False Then
+                If fiSoloNombre.StartsWith(txtTexto1.Text) = False Then
                     s = txtTexto1.Text & fi.Name
                     My.Computer.FileSystem.RenameFile(file, s)
                 End If
@@ -193,22 +202,22 @@ Public Class Form1
             End If
         ElseIf optAñadirFinal.Checked Then
             If chkNoDuplicar.Checked Then
-                If fi.Name.EndsWith(txtTexto1.Text) = False Then
-                    s = fi.Name & txtTexto1.Text
+                If fiSoloNombre.EndsWith(txtTexto1.Text) = False Then
+                    s = fiSoloNombre & txtTexto1.Text & ext
                     My.Computer.FileSystem.RenameFile(file, s)
                 End If
             Else
-                s = fi.Name & txtTexto1.Text
+                s = fiSoloNombre & txtTexto1.Text & ext
                 My.Computer.FileSystem.RenameFile(file, s)
             End If
         ElseIf optQuitarPrincipio.Checked Then
-            If fi.Name.StartsWith(txtTexto1.Text) Then
-                s = fi.Name.Replace(txtTexto1.Text, "")
+            If fiSoloNombre.StartsWith(txtTexto1.Text) Then
+                s = fiSoloNombre.Replace(txtTexto1.Text, "") & ext
                 My.Computer.FileSystem.RenameFile(file, s)
             End If
         ElseIf optQuitarFinal.Checked Then
-            If fi.Name.EndsWith(txtTexto1.Text) Then
-                s = fi.Name.Replace(txtTexto1.Text, "")
+            If fiSoloNombre.EndsWith(txtTexto1.Text) Then
+                s = fiSoloNombre.Replace(txtTexto1.Text, "") & ext
                 My.Computer.FileSystem.RenameFile(file, s)
             End If
         End If
@@ -355,15 +364,22 @@ Public Class Form1
     End Sub
 
     Private Sub chkProces1_CheckedChanged(sender As Object, e As EventArgs) Handles chkProces1.CheckedChanged
-        grbGrupo1.Enabled = chkProces1.Checked
+        'grbGrupo1.Enabled = chkProces1.Checked
+        habilitarSimple(grbGrupo1, chkProces1.Checked, chkProces1)
     End Sub
 
     Private Sub chkProces2_CheckedChanged(sender As Object, e As EventArgs) Handles chkProces2.CheckedChanged
-        grbGrupo2.Enabled = chkProces2.Checked
+        habilitarSimple(grbGrupo2, chkProces2.Checked, chkProces2)
     End Sub
 
     Private Sub chkProces3_CheckedChanged(sender As Object, e As EventArgs) Handles chkProces3.CheckedChanged
-        grbGrupo3.Enabled = chkProces3.Checked
+        habilitarSimple(grbGrupo3, chkProces3.Checked, chkProces3)
     End Sub
 
+    Private Sub habilitarSimple(ctr As Control, h As Boolean, cSaltar As Control)
+        For i = 0 To ctr.Controls.Count - 1
+            If ctr.Controls(i) Is cSaltar Then Continue For
+            ctr.Controls(i).Enabled = h
+        Next
+    End Sub
 End Class
