@@ -1,4 +1,15 @@
-﻿using System.IO;
+﻿//-----------------------------------------------------------------------------
+// Config - Clase para manejar ficheros de configuración
+//
+// Basada en la original para Visual Basic                          (15/Nov/05)
+// y revisiones posteriores.
+//
+// (c) Guillermo (elGuille) Som, 2005-2006, 2020-2021
+//-----------------------------------------------------------------------------
+
+using System;
+using System.Linq;
+using System.IO;
 using System.Xml;
 
 namespace elGuille.Util
@@ -36,6 +47,10 @@ namespace elGuille.Util
             else
                 return false;
         }
+        public double GetValue(string seccion, string clave, double predeterminado)
+        {
+            return System.Convert.ToDouble(cfgGetValue(seccion, clave, predeterminado.ToString()));
+        }
 
         public void SetValue(string seccion, string clave, string valor)
         {
@@ -53,6 +68,10 @@ namespace elGuille.Util
             else
                 cfgSetValue(seccion, clave, "0");
         }
+        public void SetValue(string seccion, string clave, double valor)
+        {
+            cfgSetValue(seccion, clave, valor.ToString());
+        }
 
         public void SetKeyValue(string seccion, string clave, string valor)
         {
@@ -68,6 +87,10 @@ namespace elGuille.Util
                 cfgSetKeyValue(seccion, clave, "1");
             else
                 cfgSetKeyValue(seccion, clave, "0");
+        }
+        public void SetKeyValue(string seccion, string clave, double valor)
+        {
+            cfgSetKeyValue(seccion, clave, valor.ToString());
         }
 
         // Elimina la sección, en realidad la deja vacía
@@ -95,6 +118,8 @@ namespace elGuille.Util
                 configXml.Load(fic);
             else
             {
+                const string revDate = "Tue, 02 Mar 2021 19:43:00 GMT";
+
                 // Crear el XML de configuración con la sección General
                 System.Text.StringBuilder sb = new System.Text.StringBuilder();
                 sb.Append("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
@@ -106,15 +131,24 @@ namespace elGuille.Util
                 sb.Append("<General>");
                 sb.Append("<!-- Los valores irán dentro del elemento indicado por la clave -->");
                 sb.Append("<!-- Aunque también se podrán indicar como pares key / value -->");
-                // sb.Append("<add key=""Copyright"" value=""©Guillermo 'guille' Som, 2005"" />")
-                sb.Append("<add key=\"Revisión\" value=\"Tue, 15 Nov 2005 23:11:00 GMT\" />");
+                sb.AppendFormat("<add key=\"Revisión\" value=\"{0}\" />", revDate);
                 sb.Append("<!-- La clase siempre los añade como un elemento -->");
-                sb.Append("<Copyright>©Guillermo 'guille' Som, 2005</Copyright>");
+                sb.Append("<Copyright>©Guillermo (elGuille) Som, 2005-2021</Copyright>");
                 sb.Append("</General>");
+
+                sb.AppendLine("<configXml_Info>");
+                sb.AppendLine("<info>Generado con Config para C#</info>");
+                sb.AppendLine("<copyright>©Guillermo 'guille' Som, 2005-2021</copyright>");
+                sb.AppendFormat("<revision>{0}</revision>", revDate);
+                sb.AppendLine();
+                sb.AppendLine("<formatoUTF8>El formato de este fichero debe ser UTF-8</formatoUTF8>");
+                sb.AppendLine("</configXml_Info>");
+
                 sb.Append("</configuration>");
+
                 // Asignamos la cadena al objeto
                 configXml.LoadXml(sb.ToString());
-                // 
+
                 // Guardamos el contenido de configXml y creamos el fichero
                 configXml.Save(ficConfig);
             }
