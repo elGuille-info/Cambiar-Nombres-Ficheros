@@ -123,6 +123,12 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>111, 17</value>
   </metadata>
+  <data name="chkNoDuplicar.ToolTip" xml:space="preserve">
+    <value>Si se elige Añadir (al principio o al final) y el texto indicado en 'Texto 1'
+ya está al principio o al final, no se modificará (es decir, no se añadirá por duplicado).
+
+En las opciones de Cambiar o Quitar del principio o final no tiene ningún efecto.</value>
+  </data>
   <metadata name="bgwProc.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>218, 17</value>
   </metadata>
@@ -135,12 +141,6 @@
   <metadata name="bgwProc3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>764, 17</value>
   </metadata>
-  <data name="chkNoDuplicar.ToolTip" xml:space="preserve">
-    <value>Si se elige Añadir (al principio o al final) y el texto indicado en 'Texto 1'
-ya está al principio o al final, no se modificará (es decir, no se añadirá por duplicado).
-
-En las opciones de Cambiar o Quitar del principio o final no tiene ningún efecto.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -154,36 +154,36 @@ En las opciones de Cambiar o Quitar del principio o final no tiene ningún efect
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACVRyCJPhmFOhaDORSDOBSDOBSDOBSDORSDOhSDOhSDOhSD
         OhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhSDOhRpMhYJBAIA
         AAChSx2mUyikTySiTiGiTiGiTiGiTiGhTiKgTSKhTSKiTSKiTSKiTSKiTSKiTSKiTSKiTSKiTSKiTSKi
-        TSKiTSKiTSKiTSKiTSKiTiKgTSKgTSKhTySkUymkTyIdDgYAAAC0bEEAAAAAAAAAAAAAAAAAAAAAAAD6
-        ///3///7//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9
-        //8AAADJl3MjDwUAAACyakAAAAAAAAD+///+///+///+//8AAAAAAAAAAAD+///29vb29vb29vb29vb2
-        9vb29vb29vb29vb29vb29vb+///+///+///+///+///+//8AAAAAAADHl3obCgEAAACzaDoAAAD8///8
+        TSKiTSKiTSKiTSKiTSKiTiKgTSKgTSKhTySkUymkTyIdDgYAAAC0bEH5///5///5///5///5///5///6
+        ///3///7///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///9
+        ///5///Jl3MjDwUAAACyakD5///5///+///+///+///+///5///5///5///+///29vb29vb29vb29vb2
+        9vb29vb29vb29vb29vb29vb+///+///+///+///+///+///5///5///Hl3obCgEAAACzaDr5///8///8
         ///7///6///6///6///6///6///6///29vZCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkL29vb6///6///6
-        ///6///6///6///8//8AAADIlHMZCQAAAAC1aTcAAAD9///6///5///7///7///6///6///6///6///2
-        9vZCQkLx7/Dx7/Dx7/Dx7/Dx7/Dx7/BCQkL29vb6///6///6///6///6///6///7//8AAADKlXIaCgAA
-        AAC3bDYAAAD+///7///8///8///7///29vb29vb29vb29vb29vZCQkLx7/Dx7/Dx7/Dx7/Dx7/Dx7/BC
-        QkL29vb6///6///6///6///6///6///7//8AAADMlnEbCgAAAAC7bjUAAAD+///5///5///5///6///2
+        ///6///6///6///8///5///IlHMZCQAAAAC1aTf5///9///6///5///7///7///6///6///6///6///2
+        9vZCQkLx7/Dx7/Dx7/Dx7/Dx7/Dx7/BCQkL29vb6///6///6///6///6///6///7///5///KlXIaCgAA
+        AAC3bDb5///+///7///8///8///7///29vb29vb29vb29vb29vZCQkLx7/Dx7/Dx7/Dx7/Dx7/Dx7/BC
+        QkL29vb6///6///6///6///6///6///7///5///MlnEbCgAAAAC7bjX5///+///5///5///5///6///2
         9vZCQkJCQkJCQkL29vZCQkLx7/Dx7/Dx7/Dx7/Dx7/Dx7/BCQkL29vb6///6///6///6///6///6///7
-        //8AAADOl24bCgAAAAC+bzEAAAAAAAD5///6///6///6///29vZCQkLx7/Dx7/D29vZCQkLx7/Dx7/Dx
-        7/Dx7/Dx7/Dx7/BCQkL29vb29vb29vb6///6///6///6///7//8AAADQmW0bCwAAAADBcDAAAAAAAAD5
+        ///5///Ol24bCgAAAAC+bzH5///5///5///6///6///6///29vZCQkLx7/Dx7/D29vZCQkLx7/Dx7/Dx
+        7/Dx7/Dx7/Dx7/BCQkL29vb29vb29vb6///6///6///6///7///5///QmW0bCwAAAADBcDD5///5///5
         ///6///6///6///29vZCQkLx7/Dx7/D29vZCQkLx7/Dx7/Dx7/Dx7/Dx7/Dx7/BCQkL29vZCQkL29vb6
-        ///6///6///6///7//8AAADSmmwcCwAAAADDci4AAAAAAAD5///6///6///6///29vZCQkLx7/Dx7/D2
-        9vZCQkLx7/Dx7/Dx7/Dx7/BCQkJCQkJCQkL29vZCQkL29vb6///6///6///6///7//8AAADVm2scDAAA
-        AADDci4AAAAAAAD5///6///6///6///29vZCQkLx7/Dx7/D29vZCQkLx7/Dx7/Dx7/Dx7/BCQkJCQkKG
-        hob08/RCQkL29vb6///6///6///6///7//8AAADVm2sPBgAAAADGcy0AAAAAAAD5///6///6///5///2
+        ///6///6///6///7///5///SmmwcCwAAAADDci75///5///5///6///6///6///29vZCQkLx7/Dx7/D2
+        9vZCQkLx7/Dx7/Dx7/Dx7/BCQkJCQkJCQkL29vZCQkL29vb6///6///6///6///7///5///Vm2scDAAA
+        AADDci75///5///5///6///6///6///29vZCQkLx7/Dx7/D29vZCQkLx7/Dx7/Dx7/Dx7/BCQkJCQkKG
+        hob08/RCQkL29vb6///6///6///6///7///5///Vm2sPBgAAAADGcy35///5///5///6///6///5///2
         9vZCQkLx7/Dx7/D29vZCQkJCQkJCQkJCQkJCQkJCQkKGhob08/Tx7/BCQkL29vb6///6///6///6///6
-        //8AAADXnGoQBgAAAADJdiwAAAAAAAD6///5///7///8///29vZCQkLx7/Dx7/D29vb29vb29vb29vb2
-        9vb29vb29vb08/Tx7/Dx7/BCQkL29vb6///6///6///6///8//8AAADZnWkQBwAAAADLdyoAAAAAAAD5
+        ///5///XnGoQBgAAAADJdiz5///5///6///5///7///8///29vZCQkLx7/Dx7/D29vb29vb29vb29vb2
+        9vb29vb29vb08/Tx7/Dx7/BCQkL29vb6///6///6///6///8///5///ZnWkQBwAAAADLdyr5///5///5
         ///8///8///7///29vZCQkLx7/Dx7/Dx7/Dx7/BCQkJCQkKGhob08/Tx7/Dx7/Dx7/Dx7/BCQkL29vb6
-        ///6///6///5//8AAAAAAADbnmgQBwAAAADNeCcAAAD+///5///5///5///6///29vZCQkJCQkJCQkJC
-        QkJCQkJCQkKGhob08/Tx7/Dx7/Dx7/BCQkJCQkJCQkL29vb6///6///5///5//8AAAAAAADdoWYQBwAA
-        AADQeiYAAAAAAAD5///5///5///6///29vb29vb29vb29vb29vb29vb29vazs7Px7/Dx7/Dx7/Dx7/BC
-        QkJCQkKGhob29vb9///7///+///5//8AAAAAAADfomURBwAAAADSeyQAAAAAAAD6//8AAAAAAAD5///6
+        ///6///6///5///5///5///bnmgQBwAAAADNeCf5///+///5///5///5///6///29vZCQkJCQkJCQkJC
+        QkJCQkJCQkKGhob08/Tx7/Dx7/Dx7/BCQkJCQkJCQkL29vb6///6///5///5///5///5///doWYQBwAA
+        AADQeib5///5///5///5///5///6///29vb29vb29vb29vb29vb29vb29vazs7Px7/Dx7/Dx7/Dx7/BC
+        QkJCQkKGhob29vb9///7///+///5///5///5///fomURBwAAAADSeyT5///5///6///5///5///5///6
         ///6///6///6///6///6///29vZCQkJCQkJCQkJCQkJCQkJCQkKGhob29vb4/Pz7///5///7///5///7
-        //8AAADgo2IRBwAAAADXfyQAAAAAAAD6///6///6///6///6///6///6///6///6///6///29vb29vb2
-        9vb29vb29vb29vb29vb29vb4/Pz6///6///6///6///9//8AAAAAAADio2IRBwAAAADehioAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAADnqWMRBwAAAADUfRzc387a1b3Z0rnZ0rna07na07na0rna07na07na07na
+        ///5///go2IRBwAAAADXfyT5///5///6///6///6///6///6///6///6///6///6///6///29vb29vb2
+        9vb29vb29vb29vb29vb29vb4/Pz6///6///6///6///9///5///5///io2IRBwAAAADehir5///5///5
+        ///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5///5
+        ///5///5///5///5///5///nqWMRBwAAAADUfRzc387a1b3Z0rnZ0rna07na07na0rna07na07na07na
         07nZ0rnZ07nZ0rnZ0rna0rna0rna0rnZ0rnZ07jYz7bWzbPZ0bfYz7XYz7Td0bTj0qre3MPUjTcWFBIA
         AACzWQCpTACiRgCfQwCfRQCfRACfRQCfQwCfQwCfQwCfRACfQwCfQwCgRQCfQwCfQwCfRACfRQCfRQCf
         RQCeQwCkSQCqUwCdQACmSgCmSQCgQgCJSQ6gSwC6WQAWFhYAAAC+ZgDLawDSbQDRawDRbgDQbgDRbgDR
@@ -196,8 +196,8 @@ En las opciones de Cambiar o Quitar del principio o final no tiene ningún efect
         gACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACA
         gACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACA
         gACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACAgACA
-        gACAgACAgACAgACAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+P//oYcAAGEAAAAhAAAAIQAAACEAA
-        AAhgAAAIYAAACGAAAAhgAAAIYAAACGAAAAhgAAAYQAAAGGAAABhsAAAIYAAAGH////gAAAAAAAAAAAAA
+        gACAgACAgACAgACAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>

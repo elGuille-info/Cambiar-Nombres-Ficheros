@@ -86,27 +86,29 @@ Partial Class Form1
         Me.grbGrupo1.Controls.Add(Me.btnExaminar1)
         Me.grbGrupo1.Controls.Add(Me.txtDir1)
         Me.grbGrupo1.Controls.Add(Me.Label1)
-        Me.grbGrupo1.Location = New System.Drawing.Point(12, 105)
-        Me.grbGrupo1.Margin = New System.Windows.Forms.Padding(3, 6, 3, 3)
+        Me.grbGrupo1.Location = New System.Drawing.Point(18, 162)
+        Me.grbGrupo1.Margin = New System.Windows.Forms.Padding(4, 9, 4, 5)
         Me.grbGrupo1.Name = "grbGrupo1"
-        Me.grbGrupo1.Size = New System.Drawing.Size(589, 81)
+        Me.grbGrupo1.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.grbGrupo1.Size = New System.Drawing.Size(884, 125)
         Me.grbGrupo1.TabIndex = 1
         Me.grbGrupo1.TabStop = False
         '
         'txtExtensiones1
         '
-        Me.txtExtensiones1.Location = New System.Drawing.Point(126, 48)
+        Me.txtExtensiones1.Location = New System.Drawing.Point(189, 74)
+        Me.txtExtensiones1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtExtensiones1.Name = "txtExtensiones1"
-        Me.txtExtensiones1.Size = New System.Drawing.Size(142, 20)
+        Me.txtExtensiones1.Size = New System.Drawing.Size(211, 26)
         Me.txtExtensiones1.TabIndex = 5
         Me.txtExtensiones1.Text = "*.mp3"
         '
         'Label4
         '
-        Me.Label4.Location = New System.Drawing.Point(12, 51)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label4.Location = New System.Drawing.Point(18, 78)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 20)
+        Me.Label4.Size = New System.Drawing.Size(159, 31)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Filtro:"
         Me.toolTip1.SetToolTip(Me.Label4, "Filtro a usar, con comodines * o ?")
@@ -114,9 +116,10 @@ Partial Class Form1
         'chkProces1
         '
         Me.chkProces1.AutoSize = True
-        Me.chkProces1.Location = New System.Drawing.Point(6, -1)
+        Me.chkProces1.Location = New System.Drawing.Point(9, -2)
+        Me.chkProces1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.chkProces1.Name = "chkProces1"
-        Me.chkProces1.Size = New System.Drawing.Size(218, 17)
+        Me.chkProces1.Size = New System.Drawing.Size(324, 24)
         Me.chkProces1.TabIndex = 0
         Me.chkProces1.Text = "Incluir también este directorio al procesar"
         Me.toolTip1.SetToolTip(Me.chkProces1, " Marca esta opción para incluir los ficheros de ese directorio al Procesar ")
@@ -125,9 +128,10 @@ Partial Class Form1
         'btnExaminar1
         '
         Me.btnExaminar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnExaminar1.Location = New System.Drawing.Point(557, 20)
+        Me.btnExaminar1.Location = New System.Drawing.Point(836, 31)
+        Me.btnExaminar1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExaminar1.Name = "btnExaminar1"
-        Me.btnExaminar1.Size = New System.Drawing.Size(26, 23)
+        Me.btnExaminar1.Size = New System.Drawing.Size(39, 35)
         Me.btnExaminar1.TabIndex = 3
         Me.btnExaminar1.Text = "..."
         Me.toolTip1.SetToolTip(Me.btnExaminar1, " Selecciona el directorio con los mp3 a procesar ")
@@ -140,17 +144,18 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDir1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtDir1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem
-        Me.txtDir1.Location = New System.Drawing.Point(126, 22)
+        Me.txtDir1.Location = New System.Drawing.Point(189, 34)
+        Me.txtDir1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtDir1.Name = "txtDir1"
-        Me.txtDir1.Size = New System.Drawing.Size(425, 20)
+        Me.txtDir1.Size = New System.Drawing.Size(636, 26)
         Me.txtDir1.TabIndex = 2
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(12, 25)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label1.Location = New System.Drawing.Point(18, 38)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(109, 20)
+        Me.Label1.Size = New System.Drawing.Size(164, 31)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Directorio:"
         '
@@ -158,17 +163,19 @@ Partial Class Form1
         '
         Me.ProgressBar1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 562)
+        Me.ProgressBar1.Location = New System.Drawing.Point(18, 865)
+        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(508, 19)
+        Me.ProgressBar1.Size = New System.Drawing.Size(762, 29)
         Me.ProgressBar1.TabIndex = 5
         '
         'btnProcesar
         '
         Me.btnProcesar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnProcesar.Location = New System.Drawing.Point(526, 587)
+        Me.btnProcesar.Location = New System.Drawing.Point(789, 903)
+        Me.btnProcesar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnProcesar.Name = "btnProcesar"
-        Me.btnProcesar.Size = New System.Drawing.Size(75, 23)
+        Me.btnProcesar.Size = New System.Drawing.Size(112, 35)
         Me.btnProcesar.TabIndex = 7
         Me.btnProcesar.Text = "Procesar"
         Me.toolTip1.SetToolTip(Me.btnProcesar, " Procesar los ficheros de los directorios indicados ")
@@ -187,17 +194,19 @@ Partial Class Form1
         '
         Me.txtTexto1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtTexto1.Location = New System.Drawing.Point(126, 22)
+        Me.txtTexto1.Location = New System.Drawing.Point(189, 34)
+        Me.txtTexto1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtTexto1.Name = "txtTexto1"
-        Me.txtTexto1.Size = New System.Drawing.Size(425, 20)
+        Me.txtTexto1.Size = New System.Drawing.Size(636, 26)
         Me.txtTexto1.TabIndex = 1
         '
         'chkProces2
         '
         Me.chkProces2.AutoSize = True
-        Me.chkProces2.Location = New System.Drawing.Point(6, -1)
+        Me.chkProces2.Location = New System.Drawing.Point(9, -2)
+        Me.chkProces2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.chkProces2.Name = "chkProces2"
-        Me.chkProces2.Size = New System.Drawing.Size(218, 17)
+        Me.chkProces2.Size = New System.Drawing.Size(324, 24)
         Me.chkProces2.TabIndex = 0
         Me.chkProces2.Text = "Incluir también este directorio al procesar"
         Me.toolTip1.SetToolTip(Me.chkProces2, " Marca esta opción para incluir los ficheros de ese directorio al Procesar ")
@@ -206,9 +215,10 @@ Partial Class Form1
         'btnExaminar2
         '
         Me.btnExaminar2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnExaminar2.Location = New System.Drawing.Point(557, 20)
+        Me.btnExaminar2.Location = New System.Drawing.Point(836, 31)
+        Me.btnExaminar2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExaminar2.Name = "btnExaminar2"
-        Me.btnExaminar2.Size = New System.Drawing.Size(26, 23)
+        Me.btnExaminar2.Size = New System.Drawing.Size(39, 35)
         Me.btnExaminar2.TabIndex = 3
         Me.btnExaminar2.Text = "..."
         Me.toolTip1.SetToolTip(Me.btnExaminar2, " Selecciona el directorio con los mp3 a procesar ")
@@ -217,9 +227,10 @@ Partial Class Form1
         'chkProces3
         '
         Me.chkProces3.AutoSize = True
-        Me.chkProces3.Location = New System.Drawing.Point(6, -1)
+        Me.chkProces3.Location = New System.Drawing.Point(9, -2)
+        Me.chkProces3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.chkProces3.Name = "chkProces3"
-        Me.chkProces3.Size = New System.Drawing.Size(218, 17)
+        Me.chkProces3.Size = New System.Drawing.Size(324, 24)
         Me.chkProces3.TabIndex = 0
         Me.chkProces3.Text = "Incluir también este directorio al procesar"
         Me.toolTip1.SetToolTip(Me.chkProces3, " Marca esta opción para incluir los ficheros de ese directorio al Procesar ")
@@ -228,9 +239,10 @@ Partial Class Form1
         'btnExaminar3
         '
         Me.btnExaminar3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnExaminar3.Location = New System.Drawing.Point(557, 20)
+        Me.btnExaminar3.Location = New System.Drawing.Point(836, 31)
+        Me.btnExaminar3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExaminar3.Name = "btnExaminar3"
-        Me.btnExaminar3.Size = New System.Drawing.Size(26, 23)
+        Me.btnExaminar3.Size = New System.Drawing.Size(39, 35)
         Me.btnExaminar3.TabIndex = 3
         Me.btnExaminar3.Text = "..."
         Me.toolTip1.SetToolTip(Me.btnExaminar3, " Selecciona el directorio con los mp3 a procesar ")
@@ -238,30 +250,30 @@ Partial Class Form1
         '
         'Label5
         '
-        Me.Label5.Location = New System.Drawing.Point(12, 51)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label5.Location = New System.Drawing.Point(18, 78)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 20)
+        Me.Label5.Size = New System.Drawing.Size(159, 31)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Filtro:"
         Me.toolTip1.SetToolTip(Me.Label5, "Filtro a usar, con comodines * o ?")
         '
         'Label6
         '
-        Me.Label6.Location = New System.Drawing.Point(12, 51)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label6.Location = New System.Drawing.Point(18, 78)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 20)
+        Me.Label6.Size = New System.Drawing.Size(159, 31)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Filtro:"
         Me.toolTip1.SetToolTip(Me.Label6, "Filtro a usar, con comodines * o ?")
         '
         'Label7
         '
-        Me.Label7.Location = New System.Drawing.Point(12, 51)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label7.Location = New System.Drawing.Point(18, 78)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(106, 20)
+        Me.Label7.Size = New System.Drawing.Size(159, 31)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Filtro:"
         Me.toolTip1.SetToolTip(Me.Label7, "Filtro a usar, con comodines * o ?")
@@ -272,9 +284,10 @@ Partial Class Form1
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Checked = True
         Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.Location = New System.Drawing.Point(6, -1)
+        Me.CheckBox1.Location = New System.Drawing.Point(9, -2)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(194, 17)
+        Me.CheckBox1.Size = New System.Drawing.Size(288, 24)
         Me.CheckBox1.TabIndex = 0
         Me.CheckBox1.TabStop = False
         Me.CheckBox1.Text = "Este directorio SIEMPRE se incluirá"
@@ -284,9 +297,10 @@ Partial Class Form1
         'btnExaminar
         '
         Me.btnExaminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnExaminar.Location = New System.Drawing.Point(557, 20)
+        Me.btnExaminar.Location = New System.Drawing.Point(836, 31)
+        Me.btnExaminar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExaminar.Name = "btnExaminar"
-        Me.btnExaminar.Size = New System.Drawing.Size(26, 23)
+        Me.btnExaminar.Size = New System.Drawing.Size(39, 35)
         Me.btnExaminar.TabIndex = 3
         Me.btnExaminar.Text = "..."
         Me.toolTip1.SetToolTip(Me.btnExaminar, " Selecciona el directorio con los mp3 a procesar ")
@@ -295,9 +309,10 @@ Partial Class Form1
         'optAñadirPrincipio
         '
         Me.optAñadirPrincipio.AutoSize = True
-        Me.optAñadirPrincipio.Location = New System.Drawing.Point(126, 74)
+        Me.optAñadirPrincipio.Location = New System.Drawing.Point(189, 114)
+        Me.optAñadirPrincipio.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.optAñadirPrincipio.Name = "optAñadirPrincipio"
-        Me.optAñadirPrincipio.Size = New System.Drawing.Size(108, 17)
+        Me.optAñadirPrincipio.Size = New System.Drawing.Size(158, 24)
         Me.optAñadirPrincipio.TabIndex = 4
         Me.optAñadirPrincipio.Text = "Añadir al principio"
         Me.toolTip1.SetToolTip(Me.optAñadirPrincipio, "Añadir al principio del nombre del fichero el texto indicado en 'Texto 1'")
@@ -307,9 +322,10 @@ Partial Class Form1
         '
         Me.optCambiar.AutoSize = True
         Me.optCambiar.Checked = True
-        Me.optCambiar.Location = New System.Drawing.Point(359, 120)
+        Me.optCambiar.Location = New System.Drawing.Point(538, 185)
+        Me.optCambiar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.optCambiar.Name = "optCambiar"
-        Me.optCambiar.Size = New System.Drawing.Size(155, 17)
+        Me.optCambiar.Size = New System.Drawing.Size(226, 24)
         Me.optCambiar.TabIndex = 9
         Me.optCambiar.TabStop = True
         Me.optCambiar.Text = "Cambiar 'Text 1' por 'Text 2'"
@@ -321,9 +337,10 @@ Partial Class Form1
         'optAñadirFinal
         '
         Me.optAñadirFinal.AutoSize = True
-        Me.optAñadirFinal.Location = New System.Drawing.Point(126, 97)
+        Me.optAñadirFinal.Location = New System.Drawing.Point(189, 149)
+        Me.optAñadirFinal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.optAñadirFinal.Name = "optAñadirFinal"
-        Me.optAñadirFinal.Size = New System.Drawing.Size(88, 17)
+        Me.optAñadirFinal.Size = New System.Drawing.Size(129, 24)
         Me.optAñadirFinal.TabIndex = 5
         Me.optAñadirFinal.Text = "Añadir al final"
         Me.toolTip1.SetToolTip(Me.optAñadirFinal, "Añadir al final del nombre del fichero el texto indicado en 'Texto 1'")
@@ -331,10 +348,10 @@ Partial Class Form1
         '
         'Label10
         '
-        Me.Label10.Location = New System.Drawing.Point(12, 51)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label10.Location = New System.Drawing.Point(18, 78)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(106, 20)
+        Me.Label10.Size = New System.Drawing.Size(159, 31)
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Texto 2 (poner):"
         Me.toolTip1.SetToolTip(Me.Label10, "Al final se puede indicar un espacio, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "si se indica más de un espacio, se dejará" &
@@ -342,10 +359,10 @@ Partial Class Form1
         '
         'Label9
         '
-        Me.Label9.Location = New System.Drawing.Point(12, 25)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label9.Location = New System.Drawing.Point(18, 38)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(106, 20)
+        Me.Label9.Size = New System.Drawing.Size(159, 31)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Texto 1:"
         Me.toolTip1.SetToolTip(Me.Label9, "Al final se puede indicar un espacio, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "si se indica más de un espacio, se dejará" &
@@ -356,9 +373,10 @@ Partial Class Form1
         Me.chkNoDuplicar.AutoSize = True
         Me.chkNoDuplicar.Checked = True
         Me.chkNoDuplicar.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkNoDuplicar.Location = New System.Drawing.Point(359, 75)
+        Me.chkNoDuplicar.Location = New System.Drawing.Point(538, 115)
+        Me.chkNoDuplicar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.chkNoDuplicar.Name = "chkNoDuplicar"
-        Me.chkNoDuplicar.Size = New System.Drawing.Size(156, 17)
+        Me.chkNoDuplicar.Size = New System.Drawing.Size(228, 24)
         Me.chkNoDuplicar.TabIndex = 8
         Me.chkNoDuplicar.Text = "No añadir si ya está el texto"
         Me.toolTip1.SetToolTip(Me.chkNoDuplicar, resources.GetString("chkNoDuplicar.ToolTip"))
@@ -367,9 +385,10 @@ Partial Class Form1
         'optQuitarFinal
         '
         Me.optQuitarFinal.AutoSize = True
-        Me.optQuitarFinal.Location = New System.Drawing.Point(126, 143)
+        Me.optQuitarFinal.Location = New System.Drawing.Point(189, 220)
+        Me.optQuitarFinal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.optQuitarFinal.Name = "optQuitarFinal"
-        Me.optQuitarFinal.Size = New System.Drawing.Size(92, 17)
+        Me.optQuitarFinal.Size = New System.Drawing.Size(135, 24)
         Me.optQuitarFinal.TabIndex = 7
         Me.optQuitarFinal.Text = "Quitar del final"
         Me.toolTip1.SetToolTip(Me.optQuitarFinal, "Quitar del final del nombre del fichero el texto indicado en 'Texto 1'")
@@ -378,9 +397,10 @@ Partial Class Form1
         'optQuitarPrincipio
         '
         Me.optQuitarPrincipio.AutoSize = True
-        Me.optQuitarPrincipio.Location = New System.Drawing.Point(126, 120)
+        Me.optQuitarPrincipio.Location = New System.Drawing.Point(189, 185)
+        Me.optQuitarPrincipio.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.optQuitarPrincipio.Name = "optQuitarPrincipio"
-        Me.optQuitarPrincipio.Size = New System.Drawing.Size(112, 17)
+        Me.optQuitarPrincipio.Size = New System.Drawing.Size(164, 24)
         Me.optQuitarPrincipio.TabIndex = 6
         Me.optQuitarPrincipio.Text = "Quitar del principio"
         Me.toolTip1.SetToolTip(Me.optQuitarPrincipio, "Quitar del principio del nombre del fichero el texto indicado en 'Texto 1'")
@@ -396,18 +416,20 @@ Partial Class Form1
         Me.grbGrupo2.Controls.Add(Me.btnExaminar2)
         Me.grbGrupo2.Controls.Add(Me.txtDir2)
         Me.grbGrupo2.Controls.Add(Me.Label2)
-        Me.grbGrupo2.Location = New System.Drawing.Point(12, 195)
-        Me.grbGrupo2.Margin = New System.Windows.Forms.Padding(3, 6, 3, 3)
+        Me.grbGrupo2.Location = New System.Drawing.Point(18, 300)
+        Me.grbGrupo2.Margin = New System.Windows.Forms.Padding(4, 9, 4, 5)
         Me.grbGrupo2.Name = "grbGrupo2"
-        Me.grbGrupo2.Size = New System.Drawing.Size(589, 81)
+        Me.grbGrupo2.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.grbGrupo2.Size = New System.Drawing.Size(884, 125)
         Me.grbGrupo2.TabIndex = 2
         Me.grbGrupo2.TabStop = False
         '
         'txtExtensiones2
         '
-        Me.txtExtensiones2.Location = New System.Drawing.Point(126, 48)
+        Me.txtExtensiones2.Location = New System.Drawing.Point(189, 74)
+        Me.txtExtensiones2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtExtensiones2.Name = "txtExtensiones2"
-        Me.txtExtensiones2.Size = New System.Drawing.Size(142, 20)
+        Me.txtExtensiones2.Size = New System.Drawing.Size(211, 26)
         Me.txtExtensiones2.TabIndex = 5
         Me.txtExtensiones2.Text = "*.txt"
         '
@@ -418,17 +440,18 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDir2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtDir2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem
-        Me.txtDir2.Location = New System.Drawing.Point(126, 22)
+        Me.txtDir2.Location = New System.Drawing.Point(189, 34)
+        Me.txtDir2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtDir2.Name = "txtDir2"
-        Me.txtDir2.Size = New System.Drawing.Size(425, 20)
+        Me.txtDir2.Size = New System.Drawing.Size(636, 26)
         Me.txtDir2.TabIndex = 2
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(12, 25)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label2.Location = New System.Drawing.Point(18, 38)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(109, 20)
+        Me.Label2.Size = New System.Drawing.Size(164, 31)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Directorio:"
         '
@@ -442,18 +465,20 @@ Partial Class Form1
         Me.grbGrupo3.Controls.Add(Me.btnExaminar3)
         Me.grbGrupo3.Controls.Add(Me.txtDir3)
         Me.grbGrupo3.Controls.Add(Me.Label3)
-        Me.grbGrupo3.Location = New System.Drawing.Point(12, 285)
-        Me.grbGrupo3.Margin = New System.Windows.Forms.Padding(3, 6, 3, 3)
+        Me.grbGrupo3.Location = New System.Drawing.Point(18, 438)
+        Me.grbGrupo3.Margin = New System.Windows.Forms.Padding(4, 9, 4, 5)
         Me.grbGrupo3.Name = "grbGrupo3"
-        Me.grbGrupo3.Size = New System.Drawing.Size(585, 81)
+        Me.grbGrupo3.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.grbGrupo3.Size = New System.Drawing.Size(878, 125)
         Me.grbGrupo3.TabIndex = 3
         Me.grbGrupo3.TabStop = False
         '
         'txtExtensiones3
         '
-        Me.txtExtensiones3.Location = New System.Drawing.Point(126, 48)
+        Me.txtExtensiones3.Location = New System.Drawing.Point(189, 74)
+        Me.txtExtensiones3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtExtensiones3.Name = "txtExtensiones3"
-        Me.txtExtensiones3.Size = New System.Drawing.Size(142, 20)
+        Me.txtExtensiones3.Size = New System.Drawing.Size(211, 26)
         Me.txtExtensiones3.TabIndex = 5
         Me.txtExtensiones3.Text = "*.md"
         '
@@ -464,17 +489,18 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDir3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtDir3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem
-        Me.txtDir3.Location = New System.Drawing.Point(126, 22)
+        Me.txtDir3.Location = New System.Drawing.Point(189, 34)
+        Me.txtDir3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtDir3.Name = "txtDir3"
-        Me.txtDir3.Size = New System.Drawing.Size(425, 20)
+        Me.txtDir3.Size = New System.Drawing.Size(636, 26)
         Me.txtDir3.TabIndex = 2
         '
         'Label3
         '
-        Me.Label3.Location = New System.Drawing.Point(12, 25)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label3.Location = New System.Drawing.Point(18, 38)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(109, 20)
+        Me.Label3.Size = New System.Drawing.Size(164, 31)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Directorio:"
         '
@@ -488,18 +514,20 @@ Partial Class Form1
         Me.grbGrupo0.Controls.Add(Me.btnExaminar)
         Me.grbGrupo0.Controls.Add(Me.txtDir)
         Me.grbGrupo0.Controls.Add(Me.Label8)
-        Me.grbGrupo0.Location = New System.Drawing.Point(12, 15)
-        Me.grbGrupo0.Margin = New System.Windows.Forms.Padding(3, 6, 3, 3)
+        Me.grbGrupo0.Location = New System.Drawing.Point(18, 23)
+        Me.grbGrupo0.Margin = New System.Windows.Forms.Padding(4, 9, 4, 5)
         Me.grbGrupo0.Name = "grbGrupo0"
-        Me.grbGrupo0.Size = New System.Drawing.Size(589, 81)
+        Me.grbGrupo0.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.grbGrupo0.Size = New System.Drawing.Size(884, 125)
         Me.grbGrupo0.TabIndex = 0
         Me.grbGrupo0.TabStop = False
         '
         'txtExtensiones
         '
-        Me.txtExtensiones.Location = New System.Drawing.Point(126, 48)
+        Me.txtExtensiones.Location = New System.Drawing.Point(189, 74)
+        Me.txtExtensiones.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtExtensiones.Name = "txtExtensiones"
-        Me.txtExtensiones.Size = New System.Drawing.Size(142, 20)
+        Me.txtExtensiones.Size = New System.Drawing.Size(211, 26)
         Me.txtExtensiones.TabIndex = 5
         Me.txtExtensiones.Text = "*.txt; *.md"
         '
@@ -510,17 +538,18 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDir.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtDir.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem
-        Me.txtDir.Location = New System.Drawing.Point(126, 22)
+        Me.txtDir.Location = New System.Drawing.Point(189, 34)
+        Me.txtDir.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtDir.Name = "txtDir"
-        Me.txtDir.Size = New System.Drawing.Size(425, 20)
+        Me.txtDir.Size = New System.Drawing.Size(636, 26)
         Me.txtDir.TabIndex = 2
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(12, 25)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label8.Location = New System.Drawing.Point(18, 38)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(109, 20)
+        Me.Label8.Size = New System.Drawing.Size(164, 31)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Directorio:"
         '
@@ -538,9 +567,11 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.optCambiar)
         Me.GroupBox4.Controls.Add(Me.optAñadirPrincipio)
         Me.GroupBox4.Controls.Add(Me.txtTexto1)
-        Me.GroupBox4.Location = New System.Drawing.Point(12, 372)
+        Me.GroupBox4.Location = New System.Drawing.Point(18, 572)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(589, 172)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.GroupBox4.Size = New System.Drawing.Size(884, 265)
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Texto a poner o cambiar"
@@ -549,9 +580,10 @@ Partial Class Form1
         '
         Me.txtTexto2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtTexto2.Location = New System.Drawing.Point(126, 48)
+        Me.txtTexto2.Location = New System.Drawing.Point(189, 74)
+        Me.txtTexto2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtTexto2.Name = "txtTexto2"
-        Me.txtTexto2.Size = New System.Drawing.Size(425, 20)
+        Me.txtTexto2.Size = New System.Drawing.Size(636, 26)
         Me.txtTexto2.TabIndex = 3
         '
         'bgwProc
@@ -562,10 +594,10 @@ Partial Class Form1
         Me.LabelStatus.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LabelStatus.BackColor = System.Drawing.SystemColors.Info
-        Me.LabelStatus.Location = New System.Drawing.Point(12, 587)
-        Me.LabelStatus.Margin = New System.Windows.Forms.Padding(3)
+        Me.LabelStatus.Location = New System.Drawing.Point(18, 903)
+        Me.LabelStatus.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.LabelStatus.Name = "LabelStatus"
-        Me.LabelStatus.Size = New System.Drawing.Size(508, 23)
+        Me.LabelStatus.Size = New System.Drawing.Size(762, 35)
         Me.LabelStatus.TabIndex = 6
         Me.LabelStatus.Text = "Label11"
         Me.LabelStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -575,9 +607,9 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(613, 622)
+        Me.ClientSize = New System.Drawing.Size(920, 957)
         Me.Controls.Add(Me.LabelStatus)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.grbGrupo0)
@@ -587,8 +619,9 @@ Partial Class Form1
         Me.Controls.Add(Me.grbGrupo2)
         Me.Controls.Add(Me.grbGrupo1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(560, 660)
+        Me.MinimumSize = New System.Drawing.Size(829, 985)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Cambiar los nombres de los ficheros"
